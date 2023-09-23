@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(130deg, #793FDF, #00FFCA);
+    padding: 10px;
+}
+
+
+.todolist{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 50px;
+    padding: 40px 30px 10px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+
+.todolist h2{
+    padding-left: 10px;
+    padding-top: -10px;
+    color: #FF0303;
+    display: flex;
+    align-items: center;
+}
+
+.todolist h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.todoitem{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    margin: 20px auto;
+    padding: 10px 15px 10px;
+    border-radius: 100px;
+}
+
+input{
+    /* position: relative; */
+    font-weight: 100px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    color: red;
+    font-size: 16px;
+    text-decoration: none;
+    flex: 1;
+}
+
+
+button{
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #16FF00;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+button:hover{
+
+    background: #F94A29;
+    color: yellow;
+
+}
+
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 20px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+.footer1 {
+    width: 100%;
+ /* Set your desired maximum width */
+    margin: 0 auto;
+    /* text-align: center; */
+    height: 13vh;
+    background-color: yellow;
+    display: flex; /* Use flexbox to align child divs */
+    justify-content: space-between; /* Space between the child divs */
+}
+
+a{
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+a:hover{
+    color: blueviolet;
+}
+.left{
+    padding: 20px;
+   text-align: left; /* Styles for the left div */
+}
+.left img{
+    width: 20px;
+    height: 20px;
+}
+
+.right {
+   text-align: right; 
+   padding: 20px;
+   /* Styles for the right div */
+   font-size: 2rem;
+}
+  .right a ion-icon {
+    position: relative;
+    animation: moveUp 1s linear infinite;
+  } 
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Adjust the distance the arrow moves */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
