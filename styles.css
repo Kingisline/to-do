@@ -90,6 +90,7 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
+    font-family: 'Vina Sans', sans-serif;
 }
 
 ul li::before{
