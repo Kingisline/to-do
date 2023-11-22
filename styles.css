@@ -60,6 +60,7 @@ input{
     font-size: 16px;
     text-decoration: none;
     flex: 1;
+    font-family: 'Pacifico', cursive;
 }
 
 
@@ -90,7 +91,7 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
-    font-family: 'Vina Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 
 ul li::before{
@@ -104,6 +105,7 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
+    font-family: 'Pacifico', cursive;
 
 }
 
@@ -128,6 +130,7 @@ ul li span{
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
+    font-family: 'Pacifico', cursive;
 }
 
 ul li span:hover{
